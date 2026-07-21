@@ -1,0 +1,65 @@
+[
+  {
+    "output": "For someone at 180cm/68kg training for a marathon, the priority is fueling glycogen stores and supporting recovery. General guidance:\n\n**Daily carbohydrate target**\n- 7-10g carbs per kg body weight on high-volume training days (roughly 475-680g for 68kg), scaling down on rest or easy days.\n- Focus on complex carbs: oats, rice, potatoes, whole grain bread/pasta, quinoa, fruit.\n\n**Protein**\n- 1.2-1.6g per kg (about 80-110g/day) to support muscle repair \u2014 lean meats, fish, eggs, dairy, legumes, tofu.\n\n**Fat**\n- 20-25% of total calories from unsaturated sources (olive oil, nuts, avocado, fatty fish) \u2014 supports hormone function without displacing carb intake.\n\n**Timing around key runs**\n- Pre-run (2-3hrs before): carb-heavy, moderate protein, low fat/fiber to avoid GI issues (e.g., oatmeal with banana, toast with honey).\n- During long runs (>75-90 min): 30-60g carbs/hour via gels, sports drinks, or chews.\n- Post-run (within 30-60 min): 1.0-1.2g carbs/kg + 20-25g protein to kickstart glycogen resynthesis and repair (e.g., chocolate milk, rice with chicken, a recovery shake).\n\n**Hydration & electrolytes**\n- Water throughout the day; add electrolytes (sodium especially) during long or hot runs to offset sweat losses.\n\n**Carb-loading (final 2-3 days before race)**\n- Increase carbs to 8-10g/kg/day while tapering training volume, to maximize glycogen stores.\n\n**Micronutrients to watch**\n- Iron (red meat, spinach, lentils) \u2014 endurance athletes are prone to depletion.\n- Calcium and Vitamin D for bone health given running's impact load.\n\nThis is general sports nutrition guidance, not individualized medical advice \u2014 a sports dietitian can fine-tune based on training volume, race goals, and any lab work.",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "180",
+        "weight": "68",
+        "goal": "Training for a marathon; needs high-carbohydrate intake to support endurance running performance and glycogen recovery",
+        "restrictions": "None"
+      },
+      "solution_criteria": [
+        "Provides a full 1 day meal plan (breakfast, lunch, dinner, snacks) that is compact and concise",
+        "Diet is clearly carbohydrate-dominant, appropriate for endurance marathon training",
+        "Meal plan is practical and tailored to the athlete's weight, without introducing restricted foods since none were specified",
+        "Includes approximate portion sizes or quantities for each meal/snack"
+      ],
+      "task_description": "write a compact,concise 1 day meal plan for a single athlete",
+      "scenario": "Endurance runner training for a marathon, high-carb intake, no dietary restrictions"
+    },
+    "score": 2,
+    "reasoning": "The task explicitly asked for a compact 1-day meal plan, and the mandatory criteria require daily caloric total, macronutrient breakdown, and meals with exact foods/portions/timing. This solution is general sports nutrition education (carb targets, timing windows, hydration, micronutrients) rather than an actual meal plan. It never states a daily calorie target, gives only ranges for macros instead of a fixed breakdown, and provides no structured breakfast/lunch/dinner/snack list with specific foods and quantities \u2014 occasional food examples like 'oatmeal with banana' lack portions. This constitutes a clear violation of multiple mandatory requirements."
+  },
+  {
+    "output": "Here's a solid framework for a vegan bodybuilding diet at that build (180cm/82kg, muscle gain focus):\n\n**Calories & macros**\n- Rough maintenance is around 2,600-2,900 kcal/day at this size; for lean muscle gain, target a surplus of 250-400 kcal above that (~2,900-3,200 kcal/day), adjusting based on weekly weight trend.\n- Protein: 1.8-2.2 g/kg bodyweight (~150-180g/day). This is the priority macro on a vegan diet since plant proteins are generally less digestible and some are missing key amino acids.\n- Fat: ~0.8-1 g/kg (~65-85g/day)\n- Carbs: fill the rest (should be substantial, since training volume for muscle gain needs fuel)\n\n**Complete protein strategy**\nVegan diets need extra attention to hit all essential amino acids, especially leucine (for muscle protein synthesis) and lysine (often low in grains).\n\nComplete protein sources (all essential aminos in decent ratios):\n- Soy foods: tofu, tempeh, edamame, soy milk\n- Seitan (very high protein, but not gluten-free)\n- Quinoa\n- Buckwheat\n- Hemp seeds\n- Combining legumes + grains (rice + beans, hummus + pita) also produces a complete amino acid profile even though neither is complete alone\n\n**Sample daily protein sources**\n- Tofu or tempeh (main lifting-day protein anchor): ~20-25g protein per 100g tempeh\n- Seitan: ~25g protein per 100g, very leucine-friendly for a plant food\n- Lentils/chickpeas + rice combos\n- Pea protein isolate or soy protein isolate shakes (very useful post-workout, higher leucine content than most whole plant foods)\n- Soy milk or pea-protein-fortified plant milk\n\n**Practical daily structure example (~3,000 kcal, ~170g protein)**\n- Breakfast: oats + soy milk + hemp seeds + banana + soy protein scoop\n- Lunch: tofu or tempeh stir-fry with rice and mixed veg, peanut sauce\n- Pre/post-workout: pea/soy protein shake + rice cakes or dates\n- Dinner: seitan or lentil-based dish with quinoa and roasted vegetables, olive oil\n- Snacks: edamame, nuts, chickpea hummus with whole grain pita\n\n**Supplements worth considering**\n- Vitamin B12 (essential, plants don't provide reliable B12)\n- Vitamin D3 (vegan/lichen-derived)\n- Creatine monohydrate (naturally absent from plant diets, well-studied for muscle/strength gains)\n- Omega-3 (algae-based EPA/DHA)\n- Iron and zinc if bloodwork shows low levels (plant iron is less bioavailable)\n\nThe main practical challenge is protein density: plant proteins take up more volume and calories per gram of protein than animal sources, so meals need to be planned deliberately rather than left to chance. Soy-based foods and protein isolates make hitting the target much easier than relying only on legumes and grains.",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "180",
+        "weight": "82",
+        "goal": "Muscle gain (bodybuilding)",
+        "restrictions": "Vegan; needs complete protein sources"
+      },
+      "solution_criteria": [
+        "Provides a 1 day meal plan compact and concise",
+        "All meals/foods are vegan (no animal products)",
+        "Includes adequate protein intake appropriate for muscle gain at 82kg, using combinations or sources that supply complete protein (all essential amino acids)",
+        "Plan is practical and specific (lists foods/meals, not just macros)"
+      ],
+      "task_description": "write a compact,concise 1 day meal plan for a single athlete",
+      "scenario": "Vegan bodybuilder focused on muscle gain, needing complete protein sources"
+    },
+    "score": 2,
+    "reasoning": "The solution correctly handles the vegan and complete-protein requirements, and includes calories and macros. However, the mandatory requirement explicitly calls for 'meals with exact foods, portions, and timing.' The solution lists foods but never specifies portion sizes (grams, cups, ounces) or timing (clock times or a structured schedule) \u2014 it only offers meal-slot labels. This is a clear, direct violation of a mandatory requirement, not a minor omission, since exact quantification is central to what was asked for and necessary for someone to actually follow the plan to hit stated protein/calorie targets."
+  },
+  {
+    "output": "Here's a general nutrition framework for a young swimmer doing two-a-day training. This isn't medical or clinical advice, just general sports nutrition guidance\u2014worth checking in with a pediatrician or sports dietitian if there are specific health concerns.\n\n**Overall priorities**\n- Frequent meals/snacks (every 2-3 hours) since growing athletes with double sessions burn through glycogen fast\n- Carbs for fuel, protein for muscle repair, fluids/electrolytes for hydration\n- Avoid all tree nuts and peanuts, including hidden sources (granola bars, some protein powders, Asian/Thai dishes, pesto, nut oils, \"may contain traces\" labels)\n\n**Before morning practice (light, carb-focused)**\n- Toast with honey or jam, banana, or a small bowl of oatmeal with milk\n- Avoid heavy fat/protein right before swimming, it digests slowly\n\n**Between sessions (the key recovery window)**\nThis is the most important part of the day for a two-a-day schedule.\n- Within 30-60 min after morning practice: fast-digesting carbs + protein, e.g. chocolate milk, a turkey or ham sandwich, yogurt with fruit, or a smoothie (milk/yogurt + banana + berries)\n- Midday meal: balanced plate, lean protein (chicken, fish, eggs, tofu), complex carbs (rice, pasta, potatoes), vegetables, and healthy fats (olive oil, seeds, avocado \u2014 all nut-free)\n- Afternoon snack before evening practice: something easy to digest, like a rice cake with cheese, fruit, or a granola bar (check ingredients for nuts)\n\n**After evening practice**\n- Another recovery combo of carbs + protein: dinner with lean protein, starchy carbs, and vegetables\n- If appetite is low after a long day, a smoothie or soup-based meal can help\n\n**Hydration**\n- Water throughout the day, and electrolyte drinks (or diluted juice with a pinch of salt) around longer/harder sessions, especially if training is intense or in a warm pool environment\n\n**Nut-free swaps for common recovery snacks**\n- Nut butter \u2192 sunflower seed butter or soy butter (check for cross-contamination-free brands)\n- Trail mix with nuts \u2192 dried fruit + seeds + pretzels\n- Protein bars \u2192 check labels carefully, many use almond or peanut as base; look for seed-based or dairy/soy protein bars manufactured in nut-free facilities\n\nSince this is a youth athlete with a nut allergy, it's worth having an EpiPen accessible at all training sessions and making sure coaches/staff are aware of the allergy.",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "165 cm",
+        "weight": "54 kg",
+        "goal": "Support fast recovery between two swim training sessions in one day (morning and evening practice) while maintaining energy for a growing youth athlete",
+        "restrictions": "Nut allergy (no tree nuts or peanuts)"
+      },
+      "solution_criteria": [
+        "Provides a full 1-day meal plan (breakfast, lunch, dinner, plus snacks) that is compact and concise",
+        "Includes at least one meal or snack specifically positioned for fast recovery after each training session",
+        "Contains no nuts or nut-derived ingredients anywhere in the plan",
+        "Meals are appropriate in portion/energy for a youth athlete's size and training demands"
+      ],
+      "task_description": "write a compact,concise 1 day meal plan for a single athlete",
+      "scenario": "Youth swimmer with a nut allergy, multiple training sessions in one day requiring fast recovery meals"
+    },
+    "score": 2,
+    "reasoning": "The solution is a well-organized general nutrition strategy for a young swimmer with a nut allergy, correctly emphasizing recovery windows around both practices and thorough allergen safety. However, it fails all three mandatory requirements: it contains no daily caloric total, no macronutrient breakdown, and no exact portions or precise meal timing\u2014options are presented as interchangeable choices ('toast with honey, banana, or oatmeal') rather than a single concrete plan with quantities (e.g., grams, cups) and clock times. Since it does not deliver a full structured 1-day meal plan but rather a set of guidelines and swaps, it does not satisfy the core task of writing a meal plan with the mandated specificity."
+  }
+]

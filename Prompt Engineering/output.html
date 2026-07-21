@@ -1,0 +1,269 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prompt Evaluation Report</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                margin: 0;
+                padding: 20px;
+                color: #333;
+            }
+            .header {
+                background-color: #f0f0f0;
+                padding: 20px;
+                border-radius: 5px;
+                margin-bottom: 20px;
+            }
+            .summary-stats {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            .stat-box {
+                background-color: #fff;
+                border-radius: 5px;
+                padding: 15px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                flex-basis: 30%;
+                min-width: 200px;
+            }
+            .stat-value {
+                font-size: 24px;
+                font-weight: bold;
+                margin-top: 5px;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+            }
+            th {
+                background-color: #4a4a4a;
+                color: white;
+                text-align: left;
+                padding: 12px;
+            }
+            td {
+                padding: 10px;
+                border-bottom: 1px solid #ddd;
+                vertical-align: top;
+            }
+            tr:nth-child(even) {
+                background-color: #f9f9f9;
+            }
+            .output-cell {
+                white-space: pre-wrap;
+            }
+            .score {
+                font-weight: bold;
+                padding: 5px 10px;
+                border-radius: 3px;
+                display: inline-block;
+            }
+            .score-high {
+                background-color: #c8e6c9;
+                color: #2e7d32;
+            }
+            .score-medium {
+                background-color: #fff9c4;
+                color: #f57f17;
+            }
+            .score-low {
+                background-color: #ffcdd2;
+                color: #c62828;
+            }
+            .output {
+                overflow: auto;
+                white-space: pre-wrap;
+            }
+
+            .output pre {
+                background-color: #f5f5f5;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                padding: 10px;
+                margin: 0;
+                font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+                font-size: 14px;
+                line-height: 1.4;
+                color: #333;
+                box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+                overflow-x: auto;
+                white-space: pre-wrap; 
+                word-wrap: break-word; 
+            }
+
+            td {
+                width: 20%;
+            }
+            .score-col {
+                width: 80px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Prompt Evaluation Report</h1>
+            <div class="summary-stats">
+                <div class="stat-box">
+                    <div>Total Test Cases</div>
+                    <div class="stat-value">3</div>
+                </div>
+                <div class="stat-box">
+                    <div>Average Score</div>
+                    <div class="stat-value">2.0 / 10</div>
+                </div>
+                <div class="stat-box">
+                    <div>Pass Rate (≥7)</div>
+                    <div class="stat-value">0.0%</div>
+                </div>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Scenario</th>
+                    <th>Prompt Inputs</th>
+                    <th>Solution Criteria</th>
+                    <th>Output</th>
+                    <th>Score</th>
+                    <th>Reasoning</th>
+                </tr>
+            </thead>
+            <tbody>
+    
+            <tr>
+                <td>Endurance runner training for a marathon, high-carb intake, no dietary restrictions</td>
+                <td class="prompt-inputs"><strong>height:</strong> 180<br><strong>weight:</strong> 68<br><strong>goal:</strong> Training for a marathon; needs high-carbohydrate intake to support endurance running performance and glycogen recovery<br><strong>restrictions:</strong> None</td>
+                <td class="criteria">• Provides a full 1 day meal plan (breakfast, lunch, dinner, snacks) that is compact and concise<br>• Diet is clearly carbohydrate-dominant, appropriate for endurance marathon training<br>• Meal plan is practical and tailored to the athlete's weight, without introducing restricted foods since none were specified<br>• Includes approximate portion sizes or quantities for each meal/snack</td>
+                <td class="output"><pre>For someone at 180cm/68kg training for a marathon, the priority is fueling glycogen stores and supporting recovery. General guidance:
+
+**Daily carbohydrate target**
+- 7-10g carbs per kg body weight on high-volume training days (roughly 475-680g for 68kg), scaling down on rest or easy days.
+- Focus on complex carbs: oats, rice, potatoes, whole grain bread/pasta, quinoa, fruit.
+
+**Protein**
+- 1.2-1.6g per kg (about 80-110g/day) to support muscle repair — lean meats, fish, eggs, dairy, legumes, tofu.
+
+**Fat**
+- 20-25% of total calories from unsaturated sources (olive oil, nuts, avocado, fatty fish) — supports hormone function without displacing carb intake.
+
+**Timing around key runs**
+- Pre-run (2-3hrs before): carb-heavy, moderate protein, low fat/fiber to avoid GI issues (e.g., oatmeal with banana, toast with honey).
+- During long runs (>75-90 min): 30-60g carbs/hour via gels, sports drinks, or chews.
+- Post-run (within 30-60 min): 1.0-1.2g carbs/kg + 20-25g protein to kickstart glycogen resynthesis and repair (e.g., chocolate milk, rice with chicken, a recovery shake).
+
+**Hydration & electrolytes**
+- Water throughout the day; add electrolytes (sodium especially) during long or hot runs to offset sweat losses.
+
+**Carb-loading (final 2-3 days before race)**
+- Increase carbs to 8-10g/kg/day while tapering training volume, to maximize glycogen stores.
+
+**Micronutrients to watch**
+- Iron (red meat, spinach, lentils) — endurance athletes are prone to depletion.
+- Calcium and Vitamin D for bone health given running's impact load.
+
+This is general sports nutrition guidance, not individualized medical advice — a sports dietitian can fine-tune based on training volume, race goals, and any lab work.</pre></td>
+                <td class="score-col"><span class="score score-low">2</span></td>
+                <td class="reasoning">The task explicitly asked for a compact 1-day meal plan, and the mandatory criteria require daily caloric total, macronutrient breakdown, and meals with exact foods/portions/timing. This solution is general sports nutrition education (carb targets, timing windows, hydration, micronutrients) rather than an actual meal plan. It never states a daily calorie target, gives only ranges for macros instead of a fixed breakdown, and provides no structured breakfast/lunch/dinner/snack list with specific foods and quantities — occasional food examples like 'oatmeal with banana' lack portions. This constitutes a clear violation of multiple mandatory requirements.</td>
+            </tr>
+        
+            <tr>
+                <td>Vegan bodybuilder focused on muscle gain, needing complete protein sources</td>
+                <td class="prompt-inputs"><strong>height:</strong> 180<br><strong>weight:</strong> 82<br><strong>goal:</strong> Muscle gain (bodybuilding)<br><strong>restrictions:</strong> Vegan; needs complete protein sources</td>
+                <td class="criteria">• Provides a 1 day meal plan compact and concise<br>• All meals/foods are vegan (no animal products)<br>• Includes adequate protein intake appropriate for muscle gain at 82kg, using combinations or sources that supply complete protein (all essential amino acids)<br>• Plan is practical and specific (lists foods/meals, not just macros)</td>
+                <td class="output"><pre>Here's a solid framework for a vegan bodybuilding diet at that build (180cm/82kg, muscle gain focus):
+
+**Calories & macros**
+- Rough maintenance is around 2,600-2,900 kcal/day at this size; for lean muscle gain, target a surplus of 250-400 kcal above that (~2,900-3,200 kcal/day), adjusting based on weekly weight trend.
+- Protein: 1.8-2.2 g/kg bodyweight (~150-180g/day). This is the priority macro on a vegan diet since plant proteins are generally less digestible and some are missing key amino acids.
+- Fat: ~0.8-1 g/kg (~65-85g/day)
+- Carbs: fill the rest (should be substantial, since training volume for muscle gain needs fuel)
+
+**Complete protein strategy**
+Vegan diets need extra attention to hit all essential amino acids, especially leucine (for muscle protein synthesis) and lysine (often low in grains).
+
+Complete protein sources (all essential aminos in decent ratios):
+- Soy foods: tofu, tempeh, edamame, soy milk
+- Seitan (very high protein, but not gluten-free)
+- Quinoa
+- Buckwheat
+- Hemp seeds
+- Combining legumes + grains (rice + beans, hummus + pita) also produces a complete amino acid profile even though neither is complete alone
+
+**Sample daily protein sources**
+- Tofu or tempeh (main lifting-day protein anchor): ~20-25g protein per 100g tempeh
+- Seitan: ~25g protein per 100g, very leucine-friendly for a plant food
+- Lentils/chickpeas + rice combos
+- Pea protein isolate or soy protein isolate shakes (very useful post-workout, higher leucine content than most whole plant foods)
+- Soy milk or pea-protein-fortified plant milk
+
+**Practical daily structure example (~3,000 kcal, ~170g protein)**
+- Breakfast: oats + soy milk + hemp seeds + banana + soy protein scoop
+- Lunch: tofu or tempeh stir-fry with rice and mixed veg, peanut sauce
+- Pre/post-workout: pea/soy protein shake + rice cakes or dates
+- Dinner: seitan or lentil-based dish with quinoa and roasted vegetables, olive oil
+- Snacks: edamame, nuts, chickpea hummus with whole grain pita
+
+**Supplements worth considering**
+- Vitamin B12 (essential, plants don't provide reliable B12)
+- Vitamin D3 (vegan/lichen-derived)
+- Creatine monohydrate (naturally absent from plant diets, well-studied for muscle/strength gains)
+- Omega-3 (algae-based EPA/DHA)
+- Iron and zinc if bloodwork shows low levels (plant iron is less bioavailable)
+
+The main practical challenge is protein density: plant proteins take up more volume and calories per gram of protein than animal sources, so meals need to be planned deliberately rather than left to chance. Soy-based foods and protein isolates make hitting the target much easier than relying only on legumes and grains.</pre></td>
+                <td class="score-col"><span class="score score-low">2</span></td>
+                <td class="reasoning">The solution correctly handles the vegan and complete-protein requirements, and includes calories and macros. However, the mandatory requirement explicitly calls for 'meals with exact foods, portions, and timing.' The solution lists foods but never specifies portion sizes (grams, cups, ounces) or timing (clock times or a structured schedule) — it only offers meal-slot labels. This is a clear, direct violation of a mandatory requirement, not a minor omission, since exact quantification is central to what was asked for and necessary for someone to actually follow the plan to hit stated protein/calorie targets.</td>
+            </tr>
+        
+            <tr>
+                <td>Youth swimmer with a nut allergy, multiple training sessions in one day requiring fast recovery meals</td>
+                <td class="prompt-inputs"><strong>height:</strong> 165 cm<br><strong>weight:</strong> 54 kg<br><strong>goal:</strong> Support fast recovery between two swim training sessions in one day (morning and evening practice) while maintaining energy for a growing youth athlete<br><strong>restrictions:</strong> Nut allergy (no tree nuts or peanuts)</td>
+                <td class="criteria">• Provides a full 1-day meal plan (breakfast, lunch, dinner, plus snacks) that is compact and concise<br>• Includes at least one meal or snack specifically positioned for fast recovery after each training session<br>• Contains no nuts or nut-derived ingredients anywhere in the plan<br>• Meals are appropriate in portion/energy for a youth athlete's size and training demands</td>
+                <td class="output"><pre>Here's a general nutrition framework for a young swimmer doing two-a-day training. This isn't medical or clinical advice, just general sports nutrition guidance—worth checking in with a pediatrician or sports dietitian if there are specific health concerns.
+
+**Overall priorities**
+- Frequent meals/snacks (every 2-3 hours) since growing athletes with double sessions burn through glycogen fast
+- Carbs for fuel, protein for muscle repair, fluids/electrolytes for hydration
+- Avoid all tree nuts and peanuts, including hidden sources (granola bars, some protein powders, Asian/Thai dishes, pesto, nut oils, "may contain traces" labels)
+
+**Before morning practice (light, carb-focused)**
+- Toast with honey or jam, banana, or a small bowl of oatmeal with milk
+- Avoid heavy fat/protein right before swimming, it digests slowly
+
+**Between sessions (the key recovery window)**
+This is the most important part of the day for a two-a-day schedule.
+- Within 30-60 min after morning practice: fast-digesting carbs + protein, e.g. chocolate milk, a turkey or ham sandwich, yogurt with fruit, or a smoothie (milk/yogurt + banana + berries)
+- Midday meal: balanced plate, lean protein (chicken, fish, eggs, tofu), complex carbs (rice, pasta, potatoes), vegetables, and healthy fats (olive oil, seeds, avocado — all nut-free)
+- Afternoon snack before evening practice: something easy to digest, like a rice cake with cheese, fruit, or a granola bar (check ingredients for nuts)
+
+**After evening practice**
+- Another recovery combo of carbs + protein: dinner with lean protein, starchy carbs, and vegetables
+- If appetite is low after a long day, a smoothie or soup-based meal can help
+
+**Hydration**
+- Water throughout the day, and electrolyte drinks (or diluted juice with a pinch of salt) around longer/harder sessions, especially if training is intense or in a warm pool environment
+
+**Nut-free swaps for common recovery snacks**
+- Nut butter → sunflower seed butter or soy butter (check for cross-contamination-free brands)
+- Trail mix with nuts → dried fruit + seeds + pretzels
+- Protein bars → check labels carefully, many use almond or peanut as base; look for seed-based or dairy/soy protein bars manufactured in nut-free facilities
+
+Since this is a youth athlete with a nut allergy, it's worth having an EpiPen accessible at all training sessions and making sure coaches/staff are aware of the allergy.</pre></td>
+                <td class="score-col"><span class="score score-low">2</span></td>
+                <td class="reasoning">The solution is a well-organized general nutrition strategy for a young swimmer with a nut allergy, correctly emphasizing recovery windows around both practices and thorough allergen safety. However, it fails all three mandatory requirements: it contains no daily caloric total, no macronutrient breakdown, and no exact portions or precise meal timing—options are presented as interchangeable choices ('toast with honey, banana, or oatmeal') rather than a single concrete plan with quantities (e.g., grams, cups) and clock times. Since it does not deliver a full structured 1-day meal plan but rather a set of guidelines and swaps, it does not satisfy the core task of writing a meal plan with the mandated specificity.</td>
+            </tr>
+        
+            </tbody>
+        </table>
+    </body>
+    </html>
+    

@@ -1,0 +1,50 @@
+[
+  {
+    "prompt_inputs": {
+      "height": "178",
+      "weight": "68",
+      "goal": "High-carb fueling for a long marathon training run tomorrow",
+      "restrictions": "Lactose intolerant"
+    },
+    "solution_criteria": [
+      "Meal plan is for a single day and clearly compact/concise",
+      "Carbohydrate intake is clearly prioritized (majority of calories from carb-rich foods)",
+      "No dairy/lactose-containing ingredients included",
+      "Plan reflects portions/energy appropriate for an endurance athlete preparing for a long training day"
+    ],
+    "task_description": "write a compact,concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with an endurance athlete (marathon runner) needing high-carb fueling before a long training day"
+  },
+  {
+    "prompt_inputs": {
+      "height": "178",
+      "weight": "88",
+      "goal": "Build muscle and support recovery for competitive weightlifting",
+      "restrictions": "Lactose intolerant"
+    },
+    "solution_criteria": [
+      "Provides a full 1-day meal plan (breakfast, lunch, dinner, and at least one snack)",
+      "Meal plan is high in protein, appropriate for muscle recovery for a weightlifter",
+      "Avoids lactose-containing ingredients or notes suitable substitutes",
+      "Plan is compact and concise, not overly long or verbose"
+    ],
+    "task_description": "write a compact,concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a strength/power athlete (weightlifter) requiring high-protein intake for muscle recovery"
+  },
+  {
+    "prompt_inputs": {
+      "height": "180",
+      "weight": "75",
+      "goal": "muscle gain and recovery for endurance training",
+      "restrictions": "vegan, no soy"
+    },
+    "solution_criteria": [
+      "All meals and foods listed are plant-based and contain no animal products or soy",
+      "Plan includes protein sources at each meal and totals a high daily protein amount appropriate for an athlete's muscle gain/recovery goal",
+      "Plan is presented compactly as a single day (breakfast, lunch, dinner, snacks) without excessive detail",
+      "Total daily calories/energy align with the athlete's size and training demands"
+    ],
+    "task_description": "write a compact,concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a vegan athlete needing a plant-based meal plan that still meets high energy and protein demands"
+  }
+]

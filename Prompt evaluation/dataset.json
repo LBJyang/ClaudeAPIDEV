@@ -1,0 +1,17 @@
+[
+  {
+    "task": "Write a Python function that takes an S3 object key (string) and returns True if it matches the pattern 'logs/YYYY/MM/DD/filename.log' where YYYY, MM, DD are numeric date components, and False otherwise.",
+    "format": "python",
+    "solution_criteria": "Function correctly validates the path structure with exactly 4-digit year, 2-digit month (01-12), 2-digit day (01-31), and a filename ending in .log; returns boolean; handles malformed input without raising unhandled exceptions."
+  },
+  {
+    "task": "Write a JSON object representing an AWS IAM policy that allows a role to perform 's3:GetObject' and 's3:PutObject' actions only on objects within the bucket 'my-app-data' under the 'uploads/' prefix.",
+    "format": "json",
+    "solution_criteria": "Valid IAM policy JSON with Version, Statement array, Effect 'Allow', correct Action list including both actions, and Resource scoped to arn:aws:s3:::my-app-data/uploads/*."
+  },
+  {
+    "task": "Write a regular expression that matches valid AWS EC2 instance IDs, which start with 'i-' followed by either 8 or 17 hexadecimal characters.",
+    "format": "regex",
+    "solution_criteria": "Regex matches 'i-' prefix followed by exactly 8 or 17 lowercase hex characters, anchors start/end appropriately, and rejects strings with incorrect lengths or non-hex characters."
+  }
+]

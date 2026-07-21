@@ -1,0 +1,50 @@
+[
+  {
+    "prompt_inputs": {
+      "height": "180",
+      "weight": "68",
+      "goal": "Training for a marathon; needs high-carbohydrate intake to support endurance running performance and glycogen recovery",
+      "restrictions": "None"
+    },
+    "solution_criteria": [
+      "Provides a full 1 day meal plan (breakfast, lunch, dinner, snacks) that is compact and concise",
+      "Diet is clearly carbohydrate-dominant, appropriate for endurance marathon training",
+      "Meal plan is practical and tailored to the athlete's weight, without introducing restricted foods since none were specified",
+      "Includes approximate portion sizes or quantities for each meal/snack"
+    ],
+    "task_description": "write a compact,concise 1 day meal plan for a single athlete",
+    "scenario": "Endurance runner training for a marathon, high-carb intake, no dietary restrictions"
+  },
+  {
+    "prompt_inputs": {
+      "height": "180",
+      "weight": "82",
+      "goal": "Muscle gain (bodybuilding)",
+      "restrictions": "Vegan; needs complete protein sources"
+    },
+    "solution_criteria": [
+      "Provides a 1 day meal plan compact and concise",
+      "All meals/foods are vegan (no animal products)",
+      "Includes adequate protein intake appropriate for muscle gain at 82kg, using combinations or sources that supply complete protein (all essential amino acids)",
+      "Plan is practical and specific (lists foods/meals, not just macros)"
+    ],
+    "task_description": "write a compact,concise 1 day meal plan for a single athlete",
+    "scenario": "Vegan bodybuilder focused on muscle gain, needing complete protein sources"
+  },
+  {
+    "prompt_inputs": {
+      "height": "165 cm",
+      "weight": "54 kg",
+      "goal": "Support fast recovery between two swim training sessions in one day (morning and evening practice) while maintaining energy for a growing youth athlete",
+      "restrictions": "Nut allergy (no tree nuts or peanuts)"
+    },
+    "solution_criteria": [
+      "Provides a full 1-day meal plan (breakfast, lunch, dinner, plus snacks) that is compact and concise",
+      "Includes at least one meal or snack specifically positioned for fast recovery after each training session",
+      "Contains no nuts or nut-derived ingredients anywhere in the plan",
+      "Meals are appropriate in portion/energy for a youth athlete's size and training demands"
+    ],
+    "task_description": "write a compact,concise 1 day meal plan for a single athlete",
+    "scenario": "Youth swimmer with a nut allergy, multiple training sessions in one day requiring fast recovery meals"
+  }
+]
