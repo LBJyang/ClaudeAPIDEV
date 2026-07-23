@@ -1,50 +1,50 @@
 [
   {
     "prompt_inputs": {
-      "height": "180",
+      "height": "175",
       "weight": "68",
-      "goal": "Training for a marathon; needs high-carbohydrate intake to support endurance running performance and glycogen recovery",
-      "restrictions": "None"
+      "goal": "Race-week carb-loading for a marathon in 4 days, maintain weight while maximizing glycogen stores",
+      "restrictions": "lactose intolerant"
     },
     "solution_criteria": [
-      "Provides a full 1 day meal plan (breakfast, lunch, dinner, snacks) that is compact and concise",
-      "Diet is clearly carbohydrate-dominant, appropriate for endurance marathon training",
-      "Meal plan is practical and tailored to the athlete's weight, without introducing restricted foods since none were specified",
-      "Includes approximate portion sizes or quantities for each meal/snack"
+      "Plan is for a single day only and stays compact/concise (not overly long or verbose)",
+      "Emphasizes high-carbohydrate meals/snacks appropriate for race-week carb-loading (majority of calories from carbs)",
+      "Avoids lactose-containing dairy ingredients, or uses lactose-free alternatives",
+      "Includes practical timing guidance for meals relative to race day (e.g., lighter fiber/fat intake, hydration notes)"
     ],
     "task_description": "write a compact,concise 1 day meal plan for a single athlete",
-    "scenario": "Endurance runner training for a marathon, high-carb intake, no dietary restrictions"
+    "scenario": "Testing with an endurance runner training for a marathon who needs high-carb fueling and race-week timing"
   },
   {
     "prompt_inputs": {
-      "height": "180",
-      "weight": "82",
-      "goal": "Muscle gain (bodybuilding)",
-      "restrictions": "Vegan; needs complete protein sources"
+      "height": "178 cm",
+      "weight": "88 kg",
+      "goal": "Cutting phase for a strength athlete: lose fat while preserving muscle mass, strict cap of 1800 kcal/day with high protein intake (around 180g)",
+      "restrictions": "No shellfish"
     },
     "solution_criteria": [
-      "Provides a 1 day meal plan compact and concise",
-      "All meals/foods are vegan (no animal products)",
-      "Includes adequate protein intake appropriate for muscle gain at 82kg, using combinations or sources that supply complete protein (all essential amino acids)",
-      "Plan is practical and specific (lists foods/meals, not just macros)"
+      "Total daily calories stay at or close to the 1800 kcal cap (not significantly exceeding it)",
+      "Daily protein total meets or exceeds ~180g",
+      "Plan contains no shellfish",
+      "Plan is compact and concise, listing meals for a single day with clear calorie/protein counts per meal"
     ],
     "task_description": "write a compact,concise 1 day meal plan for a single athlete",
-    "scenario": "Vegan bodybuilder focused on muscle gain, needing complete protein sources"
+    "scenario": "Testing with a strength athlete on a cutting phase who needs high protein under a strict calorie cap"
   },
   {
     "prompt_inputs": {
-      "height": "165 cm",
-      "weight": "54 kg",
-      "goal": "Support fast recovery between two swim training sessions in one day (morning and evening practice) while maintaining energy for a growing youth athlete",
-      "restrictions": "Nut allergy (no tree nuts or peanuts)"
+      "height": "178",
+      "weight": "68",
+      "goal": "High-volume endurance training for competitive road cycling; needs to maximize protein and iron intake for recovery and performance",
+      "restrictions": "Vegan (no animal products); must source all protein and iron from plant-based foods only"
     },
     "solution_criteria": [
-      "Provides a full 1-day meal plan (breakfast, lunch, dinner, plus snacks) that is compact and concise",
-      "Includes at least one meal or snack specifically positioned for fast recovery after each training session",
-      "Contains no nuts or nut-derived ingredients anywhere in the plan",
-      "Meals are appropriate in portion/energy for a youth athlete's size and training demands"
+      "Meal plan contains only vegan (plant-based) foods with no animal products",
+      "Includes explicit protein sources with reasonable total daily protein intake for an athlete's weight",
+      "Includes explicit iron-rich plant foods (e.g., legumes, leafy greens, fortified foods)",
+      "Plan is compact and organized into distinct meals/snacks for a single day"
     ],
     "task_description": "write a compact,concise 1 day meal plan for a single athlete",
-    "scenario": "Youth swimmer with a nut allergy, multiple training sessions in one day requiring fast recovery meals"
+    "scenario": "Testing with a vegan competitive cyclist who needs sufficient protein and iron from plant-based sources only"
   }
 ]
